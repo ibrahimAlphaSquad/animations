@@ -19,6 +19,9 @@ function App() {
         transition={{
           duration: 3,
         }}
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 1.3 }}
+        style={{ x: 100 }}
       >
         <motion.h1
           animate={{
@@ -30,7 +33,9 @@ function App() {
           Hello world!
         </motion.h1>
         <div className="flex justify-center items-center space-x-2">
-          <label className="text-xl font-bold text-white" htmlFor="rangeX_axis">X :</label>
+          <label className="text-xl font-bold text-white" htmlFor="rangeX_axis">
+            X :
+          </label>
           <input
             id="rangeX_axis"
             type="range"
@@ -43,7 +48,9 @@ function App() {
           />
         </div>
         <div className="flex justify-center items-center space-x-2">
-          <label className="text-xl font-bold text-white" htmlFor="rangeY_axis">Y :</label>
+          <label className="text-xl font-bold text-white" htmlFor="rangeY_axis">
+            Y :
+          </label>
           <input
             id="rangeY_axis"
             type="range"
