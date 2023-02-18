@@ -27,7 +27,7 @@ function App() {
                 opacity: 2,
               }}
               transition={{
-                duration: 2,
+                duration: 0.5,
               }}
               exit={{ opacity: 0 }}
               className="text-3xl font-bold text-white"
