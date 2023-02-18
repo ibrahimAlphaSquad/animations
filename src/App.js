@@ -4,17 +4,18 @@ import { motion } from "framer-motion";
 function App() {
   const [rangeX_axis, setRangeX_axis] = useState(0);
   const [rangeY_axis, setRangeY_axis] = useState(0);
+  const [isToggled, setIsToggled] = useState(false)
   return (
     <div className="flex justify-center items-center h-screen m-auto bg-gray-800">
       <motion.div
         className="border border-white rounded-lg p-8"
-        initial={{ scale: 0, x: 100 }}
+        initial={{ scale: 0}}
         animate={{
           scale: 1,
           backgroundColor: "#000",
           boxShadow: "10px 10px 0 rgba(0, 0, 0, 0.2)",
         }}
-        whileTap={{ scale: 1.3 }}
+        whileTap={{ scale: 1.5 }}
       >
         <motion.h1
           animate={{
