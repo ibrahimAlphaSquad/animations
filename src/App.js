@@ -11,21 +11,14 @@ function App() {
         initial={{ scale: 0, x: 100 }}
         animate={{
           scale: 1,
-          rotate: 360,
-          x: 0,
           backgroundColor: "#000",
           boxShadow: "10px 10px 0 rgba(0, 0, 0, 0.2)",
         }}
-        transition={{
-          duration: 3,
-        }}
-        whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 1.3 }}
-        style={{ x: 100 }}
       >
         <motion.h1
           animate={{
-            x: rangeX_axis + "px",
+            x: [rangeX_axis + "px"],
             y: rangeY_axis + "px",
           }}
           className="text-3xl font-bold text-white"
